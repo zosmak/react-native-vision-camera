@@ -14,7 +14,7 @@
 #import "Frame.h"
 
 @protocol FrameProcessorPluginBase
-+ (id) callback:(Frame*)frame withArgs:(NSArray<id>*)args;
+- (id) callback:(Frame*)frame withArgs:(NSArray<id>*)args;
 @end
 
 
@@ -55,8 +55,9 @@ objc_name : NSObject<FrameProcessorPluginBase>                                  
                                                                                     \
 __attribute__((constructor)) static void VISION_CONCAT(initialize_, objc_name)()    \
 {                                                                                   \
+  objc_name instance = [[objc_name alloc] init];                                    \
   [FrameProcessorPluginRegistry addFrameProcessorPlugin:@"__" @ #name callback:^id(Frame* frame, NSArray<id>* args) {    \
-    return [objc_name callback:frame withArgs:args];                               \
+    return [instance callback:frame withArgs:args];                                 \
   }];                                                                               \
 }
 
