@@ -20,6 +20,11 @@ class PhotoCaptureDelegate: NSObject, AVCapturePhotoCaptureDelegate {
     super.init()
     delegatesReferences.append(self)
   }
+    
+  func photoOutput(_ output: AVCapturePhotoOutput, willCapturePhotoFor resolvedSettings: AVCaptureResolvedPhotoSettings) {
+    // dispose system shutter sound
+    AudioServicesDisposeSystemSoundID(1108)
+  }
 
   func photoOutput(_: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
     defer {

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		82DAF34C27B65BF200409934 /* AVCapturePhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DAF34B27B65BF200409934 /* AVCapturePhotoCaptureDelegate.swift */; };
 		B80C0E00260BDDF7001699AB /* FrameProcessorPluginRegistry.mm in Sources */ = {isa = PBXBuildFile; fileRef = B80C0DFF260BDDF7001699AB /* FrameProcessorPluginRegistry.mm */; };
 		B80E06A0266632F000728644 /* AVAudioSession+updateCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80E069F266632F000728644 /* AVAudioSession+updateCategory.swift */; };
 		B8103E1C25FF553B007A1684 /* FrameProcessorUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = B8103E1B25FF553B007A1684 /* FrameProcessorUtils.mm */; };
@@ -79,7 +78,6 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libVisionCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVisionCamera.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		82DAF34B27B65BF200409934 /* AVCapturePhotoCaptureDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCapturePhotoCaptureDelegate.swift; sourceTree = "<group>"; };
 		B80416F026AB16E8000DEB6A /* VisionCameraScheduler.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VisionCameraScheduler.mm; sourceTree = "<group>"; };
 		B80416F126AB16F3000DEB6A /* VisionCameraScheduler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisionCameraScheduler.h; sourceTree = "<group>"; };
 		B80C0DFE260BDD97001699AB /* FrameProcessorPluginRegistry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameProcessorPluginRegistry.h; sourceTree = "<group>"; };
@@ -213,7 +211,6 @@
 				B887516725E0102000DB86D6 /* AVFrameRateRange+includes.swift */,
 				B887516825E0102000DB86D6 /* AVCapturePhotoOutput+mirror.swift */,
 				B887516925E0102000DB86D6 /* AVCaptureDevice.Format+matchesFilter.swift */,
-				82DAF34B27B65BF200409934 /* AVCapturePhotoCaptureDelegate.swift */,
 				B887516A25E0102000DB86D6 /* AVCaptureDevice.Format+toDictionary.swift */,
 				B88B47462667C8E00091F538 /* AVCaptureSession+setVideoStabilizationMode.swift */,
 				B887516225E0102000DB86D6 /* Collection+safe.swift */,
@@ -392,7 +389,6 @@
 				B887519825E0102000DB86D6 /* EnumParserError.swift in Sources */,
 				B887518C25E0102000DB86D6 /* AVCaptureDevice+isMultiCam.swift in Sources */,
 				B887518D25E0102000DB86D6 /* AVCaptureDevice+physicalDevices.swift in Sources */,
-				82DAF34C27B65BF200409934 /* AVCapturePhotoCaptureDelegate.swift in Sources */,
 				B887519625E0102000DB86D6 /* Promise.swift in Sources */,
 				B8DB3BC8263DC28C004C18D7 /* AVAssetWriter.Status+descriptor.swift in Sources */,
 				B887518725E0102000DB86D6 /* CameraViewManager.m in Sources */,
